@@ -107,3 +107,24 @@ print(f'MSE: {mean_squared_error(y_test, predictions)}')
 
 
 ```
+
+### Logistic Regression
+
+```python
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+
+# Example Dataset
+X = [[1], [2], [3], [4]]
+y = [0, 0, 1, 1]
+
+# Training Model
+model = LogisticRegression()
+model.fit(X, y)
+
+# Predictions
+predictions = model.predict(X)
+print(f'Accuracy: {accuracy_score(y, predictions)}')
+```
+
+
